@@ -1,0 +1,141 @@
+:root {
+  --primary: #37517e;
+  --text-secondary:#C1C1C1;
+}
+
+nav a {
+  text-transform: capitalize;
+  color: white !important;
+}
+
+.first-fluid {
+  background: var(--primary);
+}
+
+.image-first {
+  animation: animate 1.5s linear infinite alternate-reverse;
+}
+
+.icons {
+  display: flex;
+  gap: 10px; /* Adds space between icons */
+}
+
+.icon-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ced4da; /* Light border */
+  border-radius: 50%; /* Makes the border circular */
+  text-align: center;
+}
+
+.icon-container i {
+  font-size: 20px;
+}
+
+
+@keyframes animate {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}.overlay-btn{
+  margin-left: -10%;
+}
+
+.brand img{
+filter: grayscale(100%);
+transition: all 0.4s;
+}
+
+.brand img:hover{
+  filter: grayscale(0);
+
+}
+
+.text-blue{
+  color:#37517e;
+}
+
+.gray{
+ width: 15%;
+ height: 1px;
+ background-color: #B4B4B4;
+}
+
+.blue{
+  width: 40%;
+  height: 2px;
+  background-color: #47B2E4;
+  top:  50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.bg-blue{
+  background-color: var(--primary);
+}
+
+.fixed-img{
+  background: linear-gradient(to right, rgba(0,0,255,0.5),rgba(0,0,255,0.5)), url('https://bootstrapmade.com/content/demo/Arsha/assets/img/cta-bg.jpg') fixed;
+}
+
+.img-hover{
+  overflow: hidden;
+}
+
+.img-hover:hover .overlay{
+  opacity:1 ;
+  transform: translateY(0);
+  z-index: 1;
+
+}
+
+.overlay{
+  bottom: 0;
+  transform: translateY(20px);
+  opacity:0 ;
+  transition: all 0.4s;
+  z-index: -1;
+}
+
+
+
+@media(max-width:600px){
+  .acc-img{
+   margin: auto !important;
+  }
+}
+
+
+@media(max-width:560px){
+  .card-img1 img{
+    width: 50% !important;
+    margin: auto;
+    display: block;
+
+  }
+
+  .card-data{
+    text-align: center;
+    
+  }
+
+  .card-data .w-25{
+    margin: auto;
+
+  }
+
+  .card-data .d-flex{
+    justify-content: center;
+  }
+
+  .dollar{
+    gap: 10px;
+  }
+}
